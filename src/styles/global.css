@@ -1,8 +1,36 @@
+/* light theme
+#e8ddcb - cream
+#a7c58e - lightest green
+#5b8a6a - mid green
+#2b4f4a - dark green
+#3a3a3a - dark brown/gray
+#bdbdbd - light gray
+*/
+
+
+
+body {
+  font-family: "Open Sans", Arial;
+  margin: 0;
+  color: #3a3a3a;
+  background-color: #bdbdbd;
+}
+
+header {
+  background-color: #5b8a6a;
+  text-align: center;
+  padding: 10px;
+}
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+
 /* nav styles */
 .menu {
-  background-color: #0d0950;
+  background-color: #3a3a3a;
   border: none;
-  color: #fff;
+  color: #e8ddcb;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 5px 10px;
@@ -22,12 +50,12 @@
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #0d0950;
+  color: #e8ddcb;
 }
 
 .nav-links a:hover,
 .nav-links a:focus{
-  background-color: #ff9776;
+  background-color: #a7c58e;
 }
 
 :has(.menu[aria-expanded="true"]) .nav-links {
@@ -53,16 +81,61 @@
   }
 }
 
-/* dark theme */
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 20px;
+    text-align: center;
+    background: #2b4f4a;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+  }
+
+  a {
+    color: #a7c58e;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    margin: 0.15em;
+    border: dotted 1px #3a3a3a;
+    border-radius: .5em;
+    padding: .5em 1em;
+    font-size: .8em;
+    background-color: #fff;
+  }
+
+
+
+
+
+
+
+
+/* dark theme 
+#161e28 - dark gray
+#d4af37 - gold
+#f2ead3 - cream
+#bdbdbd - light gray
+*/
+
+
 
 html.dark {
-  background-color: #0d0950;
-  color: #fff;
+  background-color: #161e28;
+  color: #bdbdbd;
 }
 
 .dark .menu {
-  background-color: #fff;
-  color: #000;
+  background-color: #d4af37;
+  color: #161e28;
 }
 
 .dark .nav-links a:hover,
@@ -75,5 +148,5 @@ html.dark {
 }
 
 .dark a {
-  color: #ff9776;
+  color: #d4af37;
 }

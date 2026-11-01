@@ -2,52 +2,13 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "about miri";
 
-const identity = {
-  firstName: "miri",
-  country: "snezhnaya",
-  occupation: "adventurer",
-  hobbies: ["photography", "birdwatching", "smoochin"],
-};
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
-
-const happy = true;
-const finished = false;
-const goal = 3;
-
-const skillColor = "crimson";
 ---
-<style is:global>
-  h1 {
-    color: purple;
-    font-size: 4rem;
-  }
-  .skill {
-    color: var(--skillColor);
-    font-weight: bold;
-  }
-</style>
+
 <BaseLayout pageTitle={pageTitle}>
 
         <p>Back in 1997, I was introduced to the concept of fic while looking up strat guides for FFVII.  By 2000, I was publishing my own fic on egroups and then ff.net (back when you could still post smut there!) while keeping a personal archive on the side, as a response to way too many fan-run archives disappearing off the 'net.  Then Ao3 came along, and I got tired of paying for and maintaining sites, so I let my archive go, too.</p>
         <p>Ao3pocalypse 2026 was a pretty stark reminder of how life used to be, and I miss building sites anyway, so here we are.  The internet was a lot more fun when personal sites were a thing, so I'mma do my part to add to it.</p>
 
-        <p>Here are a few facts about me:</p>
-<ul>
-  <li>My name is {identity.firstName}.</li>
-  <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-  {identity.hobbies.length >= 2 &&
-    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-  }
-</ul>
-<p>My skills are:</p>
-<ul>
-  {skills.map((skill) => <li class="skill">{skill}</li>)}
-</ul>
-
-{happy && <p>I am happy to be learning Astro!</p>}
-
-{finished && <p>I finished this tutorial!</p>}
-
-{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+     
 </BaseLayout>
