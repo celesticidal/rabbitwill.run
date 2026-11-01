@@ -17,14 +17,16 @@ const { pageTitle } = Astro.props;
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		
+		<div class="wrapper">
 <Header />
-<Sidebar />
-<article class="content">
+<div class="container">
+<div class="side"><Sidebar /></div>
+<div class="main">
 		<h1>{pageTitle}</h1>
             <slot />
-			</article>
-    <Footer />
+</div>
+			
+    <Footer /></div></div>
 	  <script>
     import "../scripts/menu.js";
   </script>
