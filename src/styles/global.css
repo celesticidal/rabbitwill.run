@@ -7,6 +7,9 @@
 #bdbdbd - light gray
 */
 
+* {
+  box-sizing: border-box;
+}
 
 
 body {
@@ -16,8 +19,11 @@ body {
   background-color: #bdbdbd;
 }
 
+
+
 header {
-  background-color: #5b8a6a;
+  background: #5b8a6a;
+  color: #fff;
   text-align: center;
   padding: 10px;
 }
@@ -62,7 +68,7 @@ header {
   display: unset;
 }
 
-@media screen and (min-width: 636px) {
+@media screen and (min-width: 700px) {
   .nav-links {
     margin-left: 5em;
     display: block;
@@ -82,7 +88,6 @@ header {
 }
 
   footer {
-    display: flex;
     gap: 1rem;
     margin-top: 2rem;
     padding: 20px;
@@ -124,7 +129,7 @@ header {
 #d4af37 - gold
 #f2ead3 - cream
 #bdbdbd - light gray
-*/
+
 
 
 
@@ -150,3 +155,4 @@ html.dark {
 .dark a {
   color: #d4af37;
 }
+  */
